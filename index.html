@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="./assets/undraw_personal_training_0dqn.svg">
+        </section>
+        <section id="calculadora">
+            <form id="form">
+                <h1>Calculadora - IMC</h1>
+                <div class="input_box">
+                    <label for="peso">
+                        Peso:
+                    </label>
+                    <div class="input_field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="peso" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="altura">
+                        Altura:
+                    <div class="input_field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="altura"  step="0.010" required>
+                        <span>m</span>
+                    </div>
+                </div>
+                <input id="calcular" type="submit" value="Calcular">
+            </form>
+            <div id="informacoes" class="hidden">
+                <div id="resultado">
+                    <div id="imc">
+                        <span id="valor"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="maisinformacoes">
+                    <a href="https://www.tuasaude.com/imc/">Mais informações sobre IMC<i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
